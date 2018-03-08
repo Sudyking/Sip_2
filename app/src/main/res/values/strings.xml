@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SIP</string>
+    <string name="Logo">LOGO</string>
+    <string name="UserInfor">User Info</string>
+    <string name="sip_ip">SIP IP</string>
+    <string name="user_name">User Name</string>
+    <string name="user_password">Password</string>
+    <string name="enter_your_domain_ip">Enter your Domain IP</string>
+    <string name="your_number">Your Number</string>
+    <string name="password">Password</string>
+    <string name="clear">Clear</string>
+    <string name="login">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
