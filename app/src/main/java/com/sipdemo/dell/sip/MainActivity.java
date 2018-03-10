@@ -30,15 +30,13 @@ public class MainActivity extends AppCompatActivity {
         Login_B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {
-                if (editSipIP.equals("192.168.1.1")){
-                 if (editUser.equals("889")){
-                  if (editPass.equals("123")){
+
                       Intent in = new Intent(MainActivity.this , HomeActivity.class);
                       startActivity(in);
                       finish();
-                  }
-                 }
-                }
+
+
+
             }
         });
 
