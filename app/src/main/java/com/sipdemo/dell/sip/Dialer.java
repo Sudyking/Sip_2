@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 /**
@@ -22,6 +24,9 @@ public class Dialer extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private Button one , two , tree , four , five , six ,seven ,eight, nine , star,zero ,hashtag;
+    private EditText EditNumer ;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -63,8 +68,157 @@ public class Dialer extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dialer, container, false);
+        View view = inflater.inflate(R.layout.fragment_dialer, container, false);
+        // casting
+        one = (Button)view.findViewById(R.id.onebtm);
+        two = (Button)view.findViewById(R.id.twobtm);
+        tree = ( Button)view.findViewById(R.id.treebtm);
+        four=(Button)view.findViewById(R.id.fourbtm);
+        five=(Button)view.findViewById(R.id.fivebtm);
+        six=(Button)view.findViewById(R.id.Sixbtm);
+        seven=(Button)view.findViewById(R.id.sevenbtm);
+        eight=(Button)view.findViewById(R.id.eightbtm);
+        nine=(Button)view.findViewById(R.id.ninebtm);
+        star=(Button)view.findViewById(R.id.starbtm);
+        zero=(Button)view.findViewById(R.id.zero);
+        hashtag = (Button)view.findViewById(R.id.hashtag);
+        EditNumer=(EditText)view.findViewById(R.id.editText2);
+
+
+        //add listener
+
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"1");
+                        break;
+                }
+            }
+        });
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"2");
+                        break;
+                }
+            }
+        });
+        tree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"3");
+                        break;
+                }
+            }
+        });
+
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"4");
+                        break;
+                }
+            }
+        });
+        five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"5");
+                        break;
+                }
+            }
+        });
+        six.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"6");
+                        break;
+                }
+            }
+        });
+
+        seven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"7");
+                        break;
+                }
+            }
+        }); eight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"8");
+                        break;
+                }
+            }
+        }); nine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"9");
+                        break;
+                }
+            }
+        }); star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"*");
+                        break;
+                }
+            }
+        }); zero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"0");
+                        break;
+                }
+            }
+        });
+        hashtag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case 0 :
+                        String cache = EditNumer.getText().toString();
+                        EditNumer.setText(cache+"#");
+                        break;
+                }
+            }
+        });
+        return view;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
